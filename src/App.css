@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.addColumnButton{
+    background: #319795;
+    outline: 0;
+    border: none;
+    padding: 5px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addColumnButton  i{
+    font-size: 0.75rem;
+    margin-right: 0.5rem
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addColumnButton:active{
+    background: #285E61;
+    outline: blue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addColumnButton:hover{
+    background: #2C7A7B;
+}
+.taskCard{
+    background: #FFFFFF !important;
+    -webkit-align-self: flex-start ;
+    -ms-flex-item-align: start;
+    align-self: flex-start ;
+    width: 300px !important;
+    margin: 0.75rem !important;
+    box-shadow: 0 0 10px #999 !important;
+}
+.taskColumnBody{
+     min-height: 120px !important;
+     padding: 0px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.taskColumnList{
+    list-style: none;
+}
+.taskList{
+    list-style: none;
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskColumnDiv{
+    padding: 0.5rem 0.75rem;
+    display: flex;
+}
+
+.taskColumnDiv p{
+    margin-bottom: 0;
+}
+
+.card-header{
+    background-color: #ffffff !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 1rem !important;
+}
+.card-title{
+    margin-bottom: 0 !important;
+}
+
+.columnButton{
+    height: 1.5rem;
+    min-width: 1.5rem;
+    padding: 0rem 0.5rem !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.75rem !important;
+    border: none !important;
+    border-radius: 0.375rem !important;
+    float: right;
+    margin: 0rem 0.2rem;
+}
+/* .columnButton i{
+    font-size: 0.75rem;
+} */
+
+.deleteButton{
+    background: #E53E3E !important;
+}
+.editButton{
+    background: #EDF2F7 !important;
+    color: black  !important;
+}
+
+.taskButton{
+    padding:0rem 0.75rem !important;
+    float: right;
+    margin: 10px !important;
+    border-radius: 0.5rem !important;
+}
+.taskButton i{
+    font-size:0.74rem;
+}
+
+.taskColumnHeader{
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    display: inline-block;
+    margin: 0px 8px;
+}
+.card-title p{
+    font-weight: 700;
+    display: inline-block;
+}
+.card-text {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    font-size: 0.9rem !important;
+    width: 100% !important;
+}
+
+.editInputField{
+    font-size: 0.9rem !important;
+    height: 1.75rem !important;
+    padding: 0.2rem !important;
+}
+
+.taskBody{
+    width: 100%;
+    margin: 0 8px;
+    padding-right: 10px;
+}
+
+.addTaskButtons{
+    margin-right: 10px !important;
+}
+
+.noTask{
+        /* text-align: center; */
+        font-size: 1rem;
+        display: flex;
+        /* text-align: center; */
+        opacity: 0.6;
+        justify-content: center;
+        margin: 10px 0;
+}
+.checking{
+    display: flex;
+
+}
+
+.addColumnButton{
+    margin-left: 40px;
+}
+.header{
+    margin: 20px 40px;
 }
